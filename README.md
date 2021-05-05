@@ -5,17 +5,24 @@ User Manual
 ## 0.Introduction
 ### 0.0 Contributers
 COMP208 Group 18
+
 You Wu, Junze Zhu, Zhiyuan He, Asim Shah
+
 ### 0.1 Background
-This application is intended to be an online resource-sharing forum which implements peer-to-
-peer file-sharing technology as the core of file-sharing function.
+
+This application is intended to be an online resource-sharing forum which implements peer-to- peer file-sharing technology as the core of file-sharing function.
+
 ### 0.2 Users of the system
+
 There is only one user of the system, that is the user of the resource-sharing forum.
+
 There are 2 important values associated with each user:
 + Prestige value, a user gains 1 prestige value by publishing one file. There may be minimum prestige value required for downloading a file. 
 
 + Point, a user needs some points to download every 1 MB of data. User can obtain same points from uploading every 1 MB of data to other users.
++ 
 ### 0.3 Main functions
+
 First of all, the user is required to log in the system before they can perform any further operations. If they do not have an account, the system has provided a register page for them.
 
 After logged in to the system, the user can use the file-sharing functions of the system:
@@ -24,15 +31,18 @@ After logged in to the system, the user can use the file-sharing functions of th
 
 + Search & Download: The user could search published files either by a string or by several tags. When searched on string, the server would return files with the input string as a part of the file name. When searched on tags, the server would return results, ordered by the number of tags matched. Then user can select one resource in the search result and download that resource to a chosen location.
 
-+ Monitor tasks: The user could monitor current local fire-transmission tasks. They can monitor the status of the task, including progress, download/upload amount. They can
-remove/stop/start the task.
++ Monitor tasks: The user could monitor current local fire-transmission tasks. They can monitor the status of the task, including progress, download/upload amount. They can remove/stop/start the task.
 
 NOTE: due to Network Address Translation(NAT), all users of the application must be under the same local network.
+
 ### 0.4 Requirement and Installation
-Software requirement: The system must have Java SDK to compile and run the application. The system is given in the form of source code. It uses a standard project structure: all java source
-code are in /src folder, and dependencies are under /lib folder. To execute the program, compile the code and enter the main() at gui.Main.
+
+Software requirement: The system must have Java SDK to compile and run the application. The system is given in the form of source code. It uses a standard project structure: all java source code are in /src folder, and dependencies are under /lib folder. To execute the program, compile the code and enter the main() at gui.Main.
+
 ## 1. Instructions on Operation
+
 ### 1.1 Log in
+
 ![](https://cdn.jsdelivr.net/gh/Labyrinth510/PictureBed@master/COMP/COM20820210505221806.png)
 
 Once opened the application, the frame above shows up. If the user already holds an account, they can enter their username and password, and then click “Log in” to log in the system.
@@ -44,18 +54,24 @@ If the user is not registered yet, they could click on “Sign up”, and will b
 The user could then enter the username and password they are willing to register following the instructions. The username must have length between 6 to 20, and containing only letters and digits; The password’s length must be between 8-20. The user then confirms the password they has entered before, and press the “Register” button to register their account.
 
 If the user wishes to return to the previous page, he can click on “Return” button to return to the login page.
+
 On registration success, a notification window will pop out to notify the user, and they will be guided back to the login page to log in to the system.
+
 ### 1.2 Main Frame
 On successful login, the user will be guided to the main frame of the application.
 
 ![](https://cdn.jsdelivr.net/gh/Labyrinth510/PictureBed@master/COMP/COM20820210505221853.png)
 
 As shown from the picture above, there are 4 tabs for the main frame: Publish, Search, Tasks, Profile, the first three corresponds to the three main functions of the application, and user could view their account information, including prestige value and points at the Profile page. The system will navigate between tabs by clicking on the tab buttons at the bottom of the window.
+
 ### 1.2.1 Publish
+
 ![](https://cdn.jsdelivr.net/gh/Labyrinth510/PictureBed@master/COMP/COM20820210505221950.png)
-The picture above shows the publish tab of the application. On this tab, the user could select a
-local file and publish it.
+
+The picture above shows the publish tab of the application. On this tab, the user could select a local file and publish it.
+
 **Select file**
+
 To select a file, press the “Select file” button, and a window would pop out:
 
 Select the file and then click on “Open”, the system will load the selected file and its properties.
@@ -69,6 +85,7 @@ NOTE: THE FORMAT OF THE TAGS IS IMPORTANT HERE. Each tag should be only comprise
 example: movie, romance,1990s
 
 ![](https://cdn.jsdelivr.net/gh/Labyrinth510/PictureBed@master/COMP/COM20820210505222038.png)
+
 **Set prestige value required**
 
 Lowest prestige required means the least prestige value a user needs to download the file. It must be a nonnegative integer. Illegal inputs will not be accepted.
@@ -78,6 +95,7 @@ Lowest prestige required means the least prestige value a user needs to download
 Points required per unit indicates for this file, how much points is required to download 1 MB of data. It can only be nonnegative integer. Illegal inputs will not be accepted.
 
 After entering all the parameters and options required for the file, the user could click on the “submit” button to publish the file.
+
 ### 1.2.2 Search
 
 Click on “Search” tab at the bottom of the page to switch to the search tab.
