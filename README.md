@@ -20,7 +20,7 @@ There are 2 important values associated with each user:
 + Prestige value, a user gains 1 prestige value by publishing one file. There may be minimum prestige value required for downloading a file. 
 
 + Point, a user needs some points to download every 1 MB of data. User can obtain same points from uploading every 1 MB of data to other users.
-+ 
+
 ### 0.3 Main functions
 
 First of all, the user is required to log in the system before they can perform any further operations. If they do not have an account, the system has provided a register page for them.
