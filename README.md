@@ -1,7 +1,7 @@
 # Resource-sharing-forum-p2p-implemented
 This is a resource sharing forum which uses p2p to share resources
 
-User Manual
+#User Manual
 ## 0.Introduction
 ### 0.0 Contributers
 COMP208 Group 18
